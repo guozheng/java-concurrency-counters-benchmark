@@ -20,6 +20,12 @@ The tests uses different concurrency utilities to implement a thread-safe counte
 * StampedLock in regular read/write locks and optimistic reading lock
 * Semaphore in regular and fair mode
 
+The tests data can be found in `data`. The sub-dir name represents the jmh command line options used, e.g. `wi2-i2-f1` means 2 warmup iterations, 2 benchmark iterations and 1 fork benchmark run. The raw jmh output can be found in the actual data files. The data file name means the write and read thread counts used for the benchmark run. Inside the `graphs` sub-dir, these are visualizations for some of the comparisons.
+
+I used Excel as a quick way to run analysis and generate visualizations. You can find the Excel file (`.xlsx`) also in the data sub-dir.
+
+If you want to contribute to the repo, please use the same naming conventions in the `data` directory.
+
 ## How to run the tests
 
 The tests are written using JMH (Java Microbenchmark Harness), one of the standard way of doing micro performance benchmarking.
@@ -186,3 +192,11 @@ Usage: java -jar ... [regexp*] [options]
                               will not measure these benchmarks, but only use them
                               for the warmup.
 ```
+
+## Special thanks and references
+
+1. [Isuru's blog post: Benchmarking Java Locks with Counters](http://isuru-perera.blogspot.com/2016/05/benchmarking-java-locks-with-counters.html) and the [git repo](https://github.com/chrishantha/microbenchmarks). I found out this in the middle of my experiment and found it was doing almost the same tests. Based on his blog, I made further improvements on mine. Comparing to his great work, I tried several more combinations, pushed read and write thread count higher and reported read and write results separately.
+1. Takipi's blog post on [Java 8 LongAdder performance](http://blog.takipi.com/java-8-longadders-the-fastest-way-to-add-numbers-concurrently/) and [Java 8 StampedLock performance](http://blog.takipi.com/java-8-stampedlocks-vs-readwritelocks-and-synchronized/). And their git repo for counter benchmark (they did not use jmh somehow).
+1. Jakob Jenkov's great [beginner's intro to JMH](http://tutorials.jenkov.com/java-performance/jmh.html), all his series are very enjoyable and informative readings.
+1. java-performance.info posts: [Introduction to JMH](http://java-performance.info/jmh/) and [Introduction to JMH Profilers](http://java-performance.info/introduction-jmh-profilers/).
+1. Nitsan Wakart's posts: [JMH Resources](http://psy-lob-saw.blogspot.com/p/jmh-related-posts.html), [Writing Java Micro Benchmarks with JMH: Juice](http://psy-lob-saw.blogspot.fr/2013/04/writing-java-micro-benchmarks-with-jmh.html), [Using JMH to Benchmark Multi-Threaded Code](http://psy-lob-saw.blogspot.com/2013/05/using-jmh-to-benchmark-multi-threaded.html)

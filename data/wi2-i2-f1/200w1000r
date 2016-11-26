@@ -1,0 +1,399 @@
+# Run complete. Total time: 00:24:43
+
+Benchmark                                                                                               Mode     Cnt       Score    Error  Units
+CounterPerfTest.AtomicLongCounter                                                                      thrpt       2  139014.364           ops/s
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead                                            thrpt       2  133191.014           ops/s
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite                                           thrpt       2    5823.350           ops/s
+CounterPerfTest.FairReentrantLockCounter                                                               thrpt       2   69583.682           ops/s
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead                              thrpt       2   65616.549           ops/s
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite                             thrpt       2    3967.133           ops/s
+CounterPerfTest.FairReentrantReadWriteLockCounter                                                      thrpt       2   65126.404           ops/s
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead            thrpt       2   61318.909           ops/s
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite           thrpt       2    3807.495           ops/s
+CounterPerfTest.FairSemaphoreCounter                                                                   thrpt       2   68317.984           ops/s
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead                                      thrpt       2   64392.169           ops/s
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite                                     thrpt       2    3925.815           ops/s
+CounterPerfTest.LongAdderCounter                                                                       thrpt       2   98312.689           ops/s
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead                                              thrpt       2   93453.194           ops/s
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite                                             thrpt       2    4859.495           ops/s
+CounterPerfTest.OptimisticStampedLockCounter                                                           thrpt       2  116832.878           ops/s
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead                      thrpt       2   97068.524           ops/s
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite                     thrpt       2   19764.354           ops/s
+CounterPerfTest.ReentrantLockCounter                                                                   thrpt       2  126722.650           ops/s
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead                                      thrpt       2  119420.760           ops/s
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite                                     thrpt       2    7301.890           ops/s
+CounterPerfTest.ReentrantReadWriteLockCounter                                                          thrpt       2  200427.878           ops/s
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead                    thrpt       2  200278.514           ops/s
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite                   thrpt       2     149.364           ops/s
+CounterPerfTest.SemaphoreCounter                                                                       thrpt       2   96737.202           ops/s
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead                                              thrpt       2   92111.318           ops/s
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite                                             thrpt       2    4625.884           ops/s
+CounterPerfTest.StampedLockCounter                                                                     thrpt       2   55895.759           ops/s
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead                                          thrpt       2    7027.580           ops/s
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite                                         thrpt       2   48868.178           ops/s
+CounterPerfTest.VolatileCounter                                                                        thrpt       2   50384.811           ops/s
+CounterPerfTest.VolatileCounter:testVolatileCounterRead                                                thrpt       2   29167.557           ops/s
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite                                               thrpt       2   21217.255           ops/s
+CounterPerfTest.AtomicLongCounter                                                                       avgt       2       0.011            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead                                             avgt       2       0.010            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite                                            avgt       2       0.022            s/op
+CounterPerfTest.FairReentrantLockCounter                                                                avgt       2       0.017            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead                               avgt       2       0.016            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite                              avgt       2       0.028            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter                                                       avgt       2       0.017            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead             avgt       2       0.016            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite            avgt       2       0.028            s/op
+CounterPerfTest.FairSemaphoreCounter                                                                    avgt       2       0.017            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead                                       avgt       2       0.016            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite                                      avgt       2       0.028            s/op
+CounterPerfTest.LongAdderCounter                                                                        avgt       2       0.012            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead                                               avgt       2       0.011            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite                                              avgt       2       0.022            s/op
+CounterPerfTest.OptimisticStampedLockCounter                                                            avgt       2       0.054            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead                       avgt       2       0.034            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite                      avgt       2       0.074            s/op
+CounterPerfTest.ReentrantLockCounter                                                                    avgt       2       0.011            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead                                       avgt       2       0.011            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite                                      avgt       2       0.017            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter                                                           avgt       2       0.196            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead                     avgt       2       0.015            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite                    avgt       2       1.999            s/op
+CounterPerfTest.SemaphoreCounter                                                                        avgt       2       0.012            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead                                               avgt       2       0.011            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite                                              avgt       2       0.022            s/op
+CounterPerfTest.StampedLockCounter                                                                      avgt       2       0.060            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead                                           avgt       2       0.096            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite                                          avgt       2       0.024            s/op
+CounterPerfTest.VolatileCounter                                                                         avgt       2       0.039            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead                                                 avgt       2       0.034            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite                                                avgt       2       0.045            s/op
+CounterPerfTest.AtomicLongCounter                                                                     sample  192200       0.011 ±  0.001   s/op
+CounterPerfTest.AtomicLongCounter:AtomicLongCounter·p0.00                                             sample               0.002            s/op
+CounterPerfTest.AtomicLongCounter:AtomicLongCounter·p0.50                                             sample               0.010            s/op
+CounterPerfTest.AtomicLongCounter:AtomicLongCounter·p0.90                                             sample               0.020            s/op
+CounterPerfTest.AtomicLongCounter:AtomicLongCounter·p0.95                                             sample               0.024            s/op
+CounterPerfTest.AtomicLongCounter:AtomicLongCounter·p0.99                                             sample               0.033            s/op
+CounterPerfTest.AtomicLongCounter:AtomicLongCounter·p0.999                                            sample               0.044            s/op
+CounterPerfTest.AtomicLongCounter:AtomicLongCounter·p0.9999                                           sample               0.054            s/op
+CounterPerfTest.AtomicLongCounter:AtomicLongCounter·p1.00                                             sample               0.066            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead                                           sample  182312       0.010 ±  0.001   s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead·p0.00                                     sample               0.002            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead·p0.50                                     sample               0.009            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead·p0.90                                     sample               0.019            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead·p0.95                                     sample               0.023            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead·p0.99                                     sample               0.031            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead·p0.999                                    sample               0.042            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead·p0.9999                                   sample               0.052            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead·p1.00                                     sample               0.066            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite                                          sample    9888       0.020 ±  0.001   s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite·p0.00                                    sample               0.010            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite·p0.50                                    sample               0.020            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite·p0.90                                    sample               0.029            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite·p0.95                                    sample               0.033            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite·p0.99                                    sample               0.042            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite·p0.999                                   sample               0.052            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite·p0.9999                                  sample               0.062            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite·p1.00                                    sample               0.062            s/op
+CounterPerfTest.FairReentrantLockCounter                                                              sample  139648       0.016 ±  0.001   s/op
+CounterPerfTest.FairReentrantLockCounter:FairReentrantLockCounter·p0.00                               sample               0.014            s/op
+CounterPerfTest.FairReentrantLockCounter:FairReentrantLockCounter·p0.50                               sample               0.015            s/op
+CounterPerfTest.FairReentrantLockCounter:FairReentrantLockCounter·p0.90                               sample               0.017            s/op
+CounterPerfTest.FairReentrantLockCounter:FairReentrantLockCounter·p0.95                               sample               0.024            s/op
+CounterPerfTest.FairReentrantLockCounter:FairReentrantLockCounter·p0.99                               sample               0.026            s/op
+CounterPerfTest.FairReentrantLockCounter:FairReentrantLockCounter·p0.999                              sample               0.028            s/op
+CounterPerfTest.FairReentrantLockCounter:FairReentrantLockCounter·p0.9999                             sample               0.030            s/op
+CounterPerfTest.FairReentrantLockCounter:FairReentrantLockCounter·p1.00                               sample               0.030            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead                             sample  131715       0.015 ±  0.001   s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead·p0.00                       sample               0.014            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead·p0.50                       sample               0.015            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead·p0.90                       sample               0.016            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead·p0.95                       sample               0.017            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead·p0.99                       sample               0.019            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead·p0.999                      sample               0.020            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead·p0.9999                     sample               0.020            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead·p1.00                       sample               0.020            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite                            sample    7933       0.025 ±  0.001   s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite·p0.00                      sample               0.023            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite·p0.50                      sample               0.025            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite·p0.90                      sample               0.026            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite·p0.95                      sample               0.027            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite·p0.99                      sample               0.029            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite·p0.999                     sample               0.030            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite·p0.9999                    sample               0.030            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite·p1.00                      sample               0.030            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter                                                     sample  134668       0.016 ±  0.001   s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:FairReentrantReadWriteLockCounter·p0.00             sample               0.014            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:FairReentrantReadWriteLockCounter·p0.50             sample               0.016            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:FairReentrantReadWriteLockCounter·p0.90             sample               0.018            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:FairReentrantReadWriteLockCounter·p0.95             sample               0.024            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:FairReentrantReadWriteLockCounter·p0.99             sample               0.027            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:FairReentrantReadWriteLockCounter·p0.999            sample               0.029            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:FairReentrantReadWriteLockCounter·p0.9999           sample               0.030            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:FairReentrantReadWriteLockCounter·p1.00             sample               0.032            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead           sample  126888       0.016 ±  0.001   s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead·p0.00     sample               0.014            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead·p0.50     sample               0.016            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead·p0.90     sample               0.017            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead·p0.95     sample               0.018            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead·p0.99     sample               0.020            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead·p0.999    sample               0.022            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead·p0.9999   sample               0.023            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead·p1.00     sample               0.023            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite          sample    7780       0.026 ±  0.001   s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite·p0.00    sample               0.023            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite·p0.50    sample               0.026            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite·p0.90    sample               0.027            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite·p0.95    sample               0.028            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite·p0.99    sample               0.030            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite·p0.999   sample               0.031            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite·p0.9999  sample               0.032            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite·p1.00    sample               0.032            s/op
+CounterPerfTest.FairSemaphoreCounter                                                                  sample  142525       0.015 ±  0.001   s/op
+CounterPerfTest.FairSemaphoreCounter:FairSemaphoreCounter·p0.00                                       sample               0.014            s/op
+CounterPerfTest.FairSemaphoreCounter:FairSemaphoreCounter·p0.50                                       sample               0.015            s/op
+CounterPerfTest.FairSemaphoreCounter:FairSemaphoreCounter·p0.90                                       sample               0.016            s/op
+CounterPerfTest.FairSemaphoreCounter:FairSemaphoreCounter·p0.95                                       sample               0.024            s/op
+CounterPerfTest.FairSemaphoreCounter:FairSemaphoreCounter·p0.99                                       sample               0.026            s/op
+CounterPerfTest.FairSemaphoreCounter:FairSemaphoreCounter·p0.999                                      sample               0.027            s/op
+CounterPerfTest.FairSemaphoreCounter:FairSemaphoreCounter·p0.9999                                     sample               0.028            s/op
+CounterPerfTest.FairSemaphoreCounter:FairSemaphoreCounter·p1.00                                       sample               0.029            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead                                     sample  134526       0.015 ±  0.001   s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead·p0.00                               sample               0.014            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead·p0.50                               sample               0.015            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead·p0.90                               sample               0.016            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead·p0.95                               sample               0.016            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead·p0.99                               sample               0.017            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead·p0.999                              sample               0.019            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead·p0.9999                             sample               0.019            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead·p1.00                               sample               0.019            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite                                    sample    7999       0.025 ±  0.001   s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite·p0.00                              sample               0.022            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite·p0.50                              sample               0.025            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite·p0.90                              sample               0.026            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite·p0.95                              sample               0.026            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite·p0.99                              sample               0.027            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite·p0.999                             sample               0.028            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite·p0.9999                            sample               0.029            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite·p1.00                              sample               0.029            s/op
+CounterPerfTest.LongAdderCounter                                                                      sample  188888       0.018 ±  0.001   s/op
+CounterPerfTest.LongAdderCounter:LongAdderCounter·p0.00                                               sample               0.002            s/op
+CounterPerfTest.LongAdderCounter:LongAdderCounter·p0.50                                               sample               0.010            s/op
+CounterPerfTest.LongAdderCounter:LongAdderCounter·p0.90                                               sample               0.020            s/op
+CounterPerfTest.LongAdderCounter:LongAdderCounter·p0.95                                               sample               0.023            s/op
+CounterPerfTest.LongAdderCounter:LongAdderCounter·p0.99                                               sample               0.033            s/op
+CounterPerfTest.LongAdderCounter:LongAdderCounter·p0.999                                              sample               3.486            s/op
+CounterPerfTest.LongAdderCounter:LongAdderCounter·p0.9999                                             sample               5.395            s/op
+CounterPerfTest.LongAdderCounter:LongAdderCounter·p1.00                                               sample               5.595            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead                                             sample  179431       0.017 ±  0.001   s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead·p0.00                                       sample               0.002            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead·p0.50                                       sample               0.009            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead·p0.90                                       sample               0.019            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead·p0.95                                       sample               0.023            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead·p0.99                                       sample               0.031            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead·p0.999                                      sample               3.473            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead·p0.9999                                     sample               5.369            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead·p1.00                                       sample               5.595            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite                                            sample    9457       0.029 ±  0.006   s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite·p0.00                                      sample               0.011            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite·p0.50                                      sample               0.019            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite·p0.90                                      sample               0.028            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite·p0.95                                      sample               0.032            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite·p0.99                                      sample               0.042            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite·p0.999                                     sample               4.091            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite·p0.9999                                    sample               5.553            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite·p1.00                                      sample               5.553            s/op
+CounterPerfTest.OptimisticStampedLockCounter                                                          sample  155957       0.024 ±  0.002   s/op
+CounterPerfTest.OptimisticStampedLockCounter:OptimisticStampedLockCounter·p0.00                       sample               0.002            s/op
+CounterPerfTest.OptimisticStampedLockCounter:OptimisticStampedLockCounter·p0.50                       sample               0.014            s/op
+CounterPerfTest.OptimisticStampedLockCounter:OptimisticStampedLockCounter·p0.90                       sample               0.033            s/op
+CounterPerfTest.OptimisticStampedLockCounter:OptimisticStampedLockCounter·p0.95                       sample               0.042            s/op
+CounterPerfTest.OptimisticStampedLockCounter:OptimisticStampedLockCounter·p0.99                       sample               0.059            s/op
+CounterPerfTest.OptimisticStampedLockCounter:OptimisticStampedLockCounter·p0.999                      sample               0.089            s/op
+CounterPerfTest.OptimisticStampedLockCounter:OptimisticStampedLockCounter·p0.9999                     sample              15.314            s/op
+CounterPerfTest.OptimisticStampedLockCounter:OptimisticStampedLockCounter·p1.00                       sample              16.022            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead                     sample  127496       0.022 ±  0.003   s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead·p0.00               sample               0.002            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead·p0.50               sample               0.013            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead·p0.90               sample               0.029            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead·p0.95               sample               0.036            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead·p0.99               sample               0.049            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead·p0.999              sample               0.083            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead·p0.9999             sample              15.385            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead·p1.00               sample              16.022            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite                    sample   28461       0.036 ±  0.005   s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite·p0.00              sample               0.013            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite·p0.50              sample               0.026            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite·p0.90              sample               0.048            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite·p0.95              sample               0.054            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite·p0.99              sample               0.071            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite·p0.999             sample               0.099            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite·p0.9999            sample              13.790            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite·p1.00              sample              15.032            s/op
+CounterPerfTest.ReentrantLockCounter                                                                  sample  269880       0.009 ±  0.001   s/op
+CounterPerfTest.ReentrantLockCounter:ReentrantLockCounter·p0.00                                       sample               0.002            s/op
+CounterPerfTest.ReentrantLockCounter:ReentrantLockCounter·p0.50                                       sample               0.002            s/op
+CounterPerfTest.ReentrantLockCounter:ReentrantLockCounter·p0.90                                       sample               0.003            s/op
+CounterPerfTest.ReentrantLockCounter:ReentrantLockCounter·p0.95                                       sample               0.014            s/op
+CounterPerfTest.ReentrantLockCounter:ReentrantLockCounter·p0.99                                       sample               0.194            s/op
+CounterPerfTest.ReentrantLockCounter:ReentrantLockCounter·p0.999                                      sample               0.213            s/op
+CounterPerfTest.ReentrantLockCounter:ReentrantLockCounter·p0.9999                                     sample               0.216            s/op
+CounterPerfTest.ReentrantLockCounter:ReentrantLockCounter·p1.00                                       sample               0.227            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead                                     sample  257023       0.008 ±  0.001   s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead·p0.00                               sample               0.002            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead·p0.50                               sample               0.002            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead·p0.90                               sample               0.003            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead·p0.95                               sample               0.003            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead·p0.99                               sample               0.194            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead·p0.999                              sample               0.213            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead·p0.9999                             sample               0.216            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead·p1.00                               sample               0.218            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite                                    sample   12857       0.016 ±  0.001   s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite·p0.00                              sample               0.010            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite·p0.50                              sample               0.014            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite·p0.90                              sample               0.015            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite·p0.95                              sample               0.015            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite·p0.99                              sample               0.020            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite·p0.999                             sample               0.213            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite·p0.9999                            sample               0.227            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite·p1.00                              sample               0.227            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter                                                         sample  230804       0.009 ±  0.001   s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:ReentrantReadWriteLockCounter·p0.00                     sample               0.002            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:ReentrantReadWriteLockCounter·p0.50                     sample               0.004            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:ReentrantReadWriteLockCounter·p0.90                     sample               0.009            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:ReentrantReadWriteLockCounter·p0.95                     sample               0.012            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:ReentrantReadWriteLockCounter·p0.99                     sample               0.019            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:ReentrantReadWriteLockCounter·p0.999                    sample               1.294            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:ReentrantReadWriteLockCounter·p0.9999                   sample               2.659            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:ReentrantReadWriteLockCounter·p1.00                     sample               2.701            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead                   sample  230597       0.008 ±  0.001   s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead·p0.00             sample               0.002            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead·p0.50             sample               0.004            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead·p0.90             sample               0.009            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead·p0.95             sample               0.012            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead·p0.99             sample               0.018            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead·p0.999            sample               1.290            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead·p0.9999           sample               1.302            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead·p1.00             sample               2.701            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite                  sample     207       1.092 ±  0.289   s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite·p0.00            sample               0.010            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite·p0.50            sample               0.018            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite·p0.90            sample               2.659            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite·p0.95            sample               2.659            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite·p0.99            sample               2.690            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite·p0.999           sample               2.693            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite·p0.9999          sample               2.693            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite·p1.00            sample               2.693            s/op
+CounterPerfTest.SemaphoreCounter                                                                      sample  178541       0.012 ±  0.001   s/op
+CounterPerfTest.SemaphoreCounter:SemaphoreCounter·p0.00                                               sample               0.002            s/op
+CounterPerfTest.SemaphoreCounter:SemaphoreCounter·p0.50                                               sample               0.019            s/op
+CounterPerfTest.SemaphoreCounter:SemaphoreCounter·p0.90                                               sample               0.022            s/op
+CounterPerfTest.SemaphoreCounter:SemaphoreCounter·p0.95                                               sample               0.023            s/op
+CounterPerfTest.SemaphoreCounter:SemaphoreCounter·p0.99                                               sample               0.033            s/op
+CounterPerfTest.SemaphoreCounter:SemaphoreCounter·p0.999                                              sample               0.035            s/op
+CounterPerfTest.SemaphoreCounter:SemaphoreCounter·p0.9999                                             sample               0.038            s/op
+CounterPerfTest.SemaphoreCounter:SemaphoreCounter·p1.00                                               sample               0.039            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead                                             sample  170122       0.012 ±  0.001   s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead·p0.00                                       sample               0.002            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead·p0.50                                       sample               0.019            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead·p0.90                                       sample               0.022            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead·p0.95                                       sample               0.023            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead·p0.99                                       sample               0.023            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead·p0.999                                      sample               0.027            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead·p0.9999                                     sample               0.028            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead·p1.00                                       sample               0.029            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite                                            sample    8419       0.024 ±  0.001   s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite·p0.00                                      sample               0.010            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite·p0.50                                      sample               0.031            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite·p0.90                                      sample               0.034            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite·p0.95                                      sample               0.034            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite·p0.99                                      sample               0.035            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite·p0.999                                     sample               0.039            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite·p0.9999                                    sample               0.039            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite·p1.00                                      sample               0.039            s/op
+CounterPerfTest.StampedLockCounter                                                                    sample  106179       0.038 ±  0.001   s/op
+CounterPerfTest.StampedLockCounter:StampedLockCounter·p0.00                                           sample               0.010            s/op
+CounterPerfTest.StampedLockCounter:StampedLockCounter·p0.50                                           sample               0.015            s/op
+CounterPerfTest.StampedLockCounter:StampedLockCounter·p0.90                                           sample               0.107            s/op
+CounterPerfTest.StampedLockCounter:StampedLockCounter·p0.95                                           sample               0.156            s/op
+CounterPerfTest.StampedLockCounter:StampedLockCounter·p0.99                                           sample               0.220            s/op
+CounterPerfTest.StampedLockCounter:StampedLockCounter·p0.999                                          sample               0.245            s/op
+CounterPerfTest.StampedLockCounter:StampedLockCounter·p0.9999                                         sample               0.246            s/op
+CounterPerfTest.StampedLockCounter:StampedLockCounter·p1.00                                           sample               0.304            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead                                         sample   17709       0.115 ±  0.001   s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead·p0.00                                   sample               0.043            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead·p0.50                                   sample               0.097            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead·p0.90                                   sample               0.199            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead·p0.95                                   sample               0.218            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead·p0.99                                   sample               0.237            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead·p0.999                                  sample               0.242            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead·p0.9999                                 sample               0.272            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead·p1.00                                   sample               0.304            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite                                        sample   88470       0.023 ±  0.001   s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite·p0.00                                  sample               0.010            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite·p0.50                                  sample               0.014            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite·p0.90                                  sample               0.058            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite·p0.95                                  sample               0.087            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite·p0.99                                  sample               0.170            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite·p0.999                                 sample               0.245            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite·p0.9999                                sample               0.246            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite·p1.00                                  sample               0.251            s/op
+CounterPerfTest.VolatileCounter                                                                       sample  703481       0.079 ±  0.005   s/op
+CounterPerfTest.VolatileCounter:VolatileCounter·p0.00                                                 sample               0.002            s/op
+CounterPerfTest.VolatileCounter:VolatileCounter·p0.50                                                 sample               0.031            s/op
+CounterPerfTest.VolatileCounter:VolatileCounter·p0.90                                                 sample               0.066            s/op
+CounterPerfTest.VolatileCounter:VolatileCounter·p0.95                                                 sample               0.084            s/op
+CounterPerfTest.VolatileCounter:VolatileCounter·p0.99                                                 sample               0.117            s/op
+CounterPerfTest.VolatileCounter:VolatileCounter·p0.999                                                sample              20.888            s/op
+CounterPerfTest.VolatileCounter:VolatileCounter·p0.9999                                               sample              47.288            s/op
+CounterPerfTest.VolatileCounter:VolatileCounter·p1.00                                                 sample              50.332            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead                                               sample  336889       0.088 ±  0.008   s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead·p0.00                                         sample               0.002            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead·p0.50                                         sample               0.023            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead·p0.90                                         sample               0.062            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead·p0.95                                         sample               0.076            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead·p0.99                                         sample               0.113            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead·p0.999                                        sample              29.203            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead·p0.9999                                       sample              48.385            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead·p1.00                                         sample              50.332            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite                                              sample  366592       0.071 ±  0.005   s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite·p0.00                                        sample               0.010            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite·p0.50                                        sample               0.033            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite·p0.90                                        sample               0.073            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite·p0.95                                        sample               0.086            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite·p0.99                                        sample               0.120            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite·p0.999                                       sample               9.174            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite·p0.9999                                      sample              45.187            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite·p1.00                                        sample              50.332            s/op
+CounterPerfTest.AtomicLongCounter                                                                         ss       2       0.003            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterRead                                               ss       2       0.002            s/op
+CounterPerfTest.AtomicLongCounter:testAtomicLongCounterWrite                                              ss       2       0.011            s/op
+CounterPerfTest.FairReentrantLockCounter                                                                  ss       2       0.003            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterRead                                 ss       2       0.002            s/op
+CounterPerfTest.FairReentrantLockCounter:testFairReentrantLockCounterWrite                                ss       2       0.012            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter                                                         ss       2       0.003            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterRead               ss       2       0.002            s/op
+CounterPerfTest.FairReentrantReadWriteLockCounter:testFairReentrantReadWriteLockCounterWrite              ss       2       0.011            s/op
+CounterPerfTest.FairSemaphoreCounter                                                                      ss       2       0.003            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterRead                                         ss       2       0.002            s/op
+CounterPerfTest.FairSemaphoreCounter:testFairSemaphoreCounterWrite                                        ss       2       0.012            s/op
+CounterPerfTest.LongAdderCounter                                                                          ss       2       0.003            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterRead                                                 ss       2       0.002            s/op
+CounterPerfTest.LongAdderCounter:testLongAdderCounterWrite                                                ss       2       0.011            s/op
+CounterPerfTest.OptimisticStampedLockCounter                                                              ss       2       0.007            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterRead                         ss       2       0.002            s/op
+CounterPerfTest.OptimisticStampedLockCounter:testOptimisticStampedLockCounterWrite                        ss       2       0.011            s/op
+CounterPerfTest.ReentrantLockCounter                                                                      ss       2       0.003            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterRead                                         ss       2       0.002            s/op
+CounterPerfTest.ReentrantLockCounter:testReentrantLockCounterWrite                                        ss       2       0.011            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter                                                             ss       2       0.003            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterRead                       ss       2       0.002            s/op
+CounterPerfTest.ReentrantReadWriteLockCounter:testReentrantReadWriteLockCounterWrite                      ss       2       0.011            s/op
+CounterPerfTest.SemaphoreCounter                                                                          ss       2       0.003            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterRead                                                 ss       2       0.002            s/op
+CounterPerfTest.SemaphoreCounter:testSemaphoreCounterWrite                                                ss       2       0.012            s/op
+CounterPerfTest.StampedLockCounter                                                                        ss       2       0.007            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterRead                                             ss       2       0.002            s/op
+CounterPerfTest.StampedLockCounter:testStampedLockCounterWrite                                            ss       2       0.011            s/op
+CounterPerfTest.VolatileCounter                                                                           ss       2       0.007            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterRead                                                   ss       2       0.002            s/op
+CounterPerfTest.VolatileCounter:testVolatileCounterWrite                                                  ss       2       0.011            s/op

@@ -12,10 +12,10 @@ import java.util.concurrent.TimeUnit;
  * Created by gzge on 11/19/16.
  */
 public class CounterPerfTest {
-    public static final int WRITE_THREAD_COUNT = 1000;
-    public static final int READ_THREAD_COUNT = 500;
-    public static final long THREAD_WRITE_TIME_MS = 10;
-    public static final long THREAD_READ_TIME_MS = 2;
+    public static final int WRITE_THREAD_COUNT = 5;
+    public static final int READ_THREAD_COUNT = 5;
+    public static final long WRITE_THREAD_TIME_MS = 10;
+    public static final long READ_THREAD_TIME_MS = 2;
 
     @State(Scope.Benchmark)
     public static class CounterPerfState {
@@ -52,7 +52,7 @@ public class CounterPerfTest {
     public void testAtomicLongCounterWrite(CounterPerfState state) {
         state.atomicLongCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -65,7 +65,7 @@ public class CounterPerfTest {
     public long testAtomicLongCounterRead(CounterPerfState state) {
         long c = state.atomicLongCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {}
         return c;
     }
@@ -78,7 +78,7 @@ public class CounterPerfTest {
     public void testLongAdderCounterWrite(CounterPerfState state) {
         state.longAdderCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {}
     }
 
@@ -90,7 +90,7 @@ public class CounterPerfTest {
     public long testLongAdderCounterRead(CounterPerfState state) {
         long c = state.longAdderCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {}
         return c;
     }
@@ -103,7 +103,7 @@ public class CounterPerfTest {
     public void testReentrantLockCounterWrite(CounterPerfState state) {
         state.reentrantLockCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -116,7 +116,7 @@ public class CounterPerfTest {
     public long testReentrantLockCounterRead(CounterPerfState state) {
         long c = state.reentrantLockCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {}
         return c;
     }
@@ -129,7 +129,7 @@ public class CounterPerfTest {
     public void testFairReentrantLockCounterWrite(CounterPerfState state) {
         state.fairReentrantLockCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -142,7 +142,7 @@ public class CounterPerfTest {
     public long testFairReentrantLockCounterRead(CounterPerfState state) {
         long c = state.fairReentrantLockCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {}
         return c;
     }
@@ -155,7 +155,7 @@ public class CounterPerfTest {
     public void testReentrantReadWriteLockCounterWrite(CounterPerfState state) {
         state.reentrantReadWriteLockCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -168,7 +168,7 @@ public class CounterPerfTest {
     public long testReentrantReadWriteLockCounterRead(CounterPerfState state) {
         long c = state.reentrantReadWriteLockCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {}
         return c;
     }
@@ -181,7 +181,7 @@ public class CounterPerfTest {
     public void testFairReentrantReadWriteLockCounterWrite(CounterPerfState state) {
         state.fairReentrantReadWriteLockCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -194,7 +194,7 @@ public class CounterPerfTest {
     public long testFairReentrantReadWriteLockCounterRead(CounterPerfState state) {
         long c = state.fairReentrantReadWriteLockCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {}
         return c;
     }
@@ -207,7 +207,7 @@ public class CounterPerfTest {
     public void testSemaphoreCounterWrite(CounterPerfState state) {
         state.semaphoreCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -220,7 +220,7 @@ public class CounterPerfTest {
     public long testSemaphoreCounterRead(CounterPerfState state) {
         long c = state.semaphoreCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {}
         return c;
     }
@@ -233,7 +233,7 @@ public class CounterPerfTest {
     public void testFairSemaphoreCounterWrite(CounterPerfState state) {
         state.fairSemaphoreCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -246,7 +246,7 @@ public class CounterPerfTest {
     public void testFairSemaphoreCounterRead(CounterPerfState state) {
         state.fairSemaphoreCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -259,7 +259,7 @@ public class CounterPerfTest {
     public void testStampedLockCounterWrite(CounterPerfState state) {
         state.stampedLockCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -272,7 +272,7 @@ public class CounterPerfTest {
     public void testStampedLockCounterRead(CounterPerfState state) {
         state.stampedLockCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -285,7 +285,7 @@ public class CounterPerfTest {
     public void testOptimisticStampedLockCounterWrite(CounterPerfState state) {
         state.optimisticStampedLockCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -298,7 +298,7 @@ public class CounterPerfTest {
     public void testOptimisticStampedLockCounterRead(CounterPerfState state) {
         state.optimisticStampedLockCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -311,7 +311,7 @@ public class CounterPerfTest {
     public void testVolatileCounterWrite(CounterPerfState state) {
         state.volatileCounter.increment();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_WRITE_TIME_MS);
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }
@@ -324,7 +324,7 @@ public class CounterPerfTest {
     public void testVolatileCounterRead(CounterPerfState state) {
         state.volatileCounter.get();
         try {
-            Thread.sleep(CounterPerfTest.THREAD_READ_TIME_MS);
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
         } catch (InterruptedException e) {
         }
     }

@@ -1,6 +1,6 @@
-# Java Concurrent Counter Performance Comparison
+# Java concurrency Counter Performance Benchmark
 
-A simple counter implemented using different java concurrency utilities to compare the performance characteristics.
+Simple counters implemented using different java concurrency utilities to compare the performance characteristics.
 
 ## Environment
 

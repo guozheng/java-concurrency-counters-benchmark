@@ -1,30 +1,46 @@
-# Java Concurrent Counter Performance
+# Java Concurrent Counter Performance Comparison
+
 A simple counter implemented using different java concurrency utilities to compare the performance characteristics.
 
-# Environment
-   * *Hardware*: a mid-2012 Macbook Pro with 2.6 GHz Core i7 CPU and 16GB 1600 MHz DDR3 memory.
-   * *Software*: macOS Sierra (v10.12.1), Java 8 (build 1.8.0_66-b17), jmh 1.16
+## Environment
 
-# Results
+* *Hardware*: a mid-2012 Macbook Pro with 2.6 GHz Core i7 CPU and 16GB 1600 MHz DDR3 memory.
+* *Software*: macOS Sierra (v10.12.1), Java 8 (build 1.8.0_66-b17), jmh 1.16
 
-# How to run the sample
+## Tests and results
+
+The tests uses different concurrency utilities to implement a thread-safe counter with a `long` type value:
+
+* Synchronized
+* Volatile
+* AtomicLong
+* LongAdder
+* ReentrantLock in reguar and fair modes
+* ReentrantReadWriteLock in reguar and fair modes
+* StampedLock in regular read/write locks and optimistic reading lock
+* Semaphore in regular and fair mode
+
+## How to run the tests
+
 The tests are written using JMH (Java Microbenchmark Harness), one of the standard way of doing micro performance benchmarking.
 
 By default perform 20 warmup iterations, 20 measurement iterations and fork 10 times for the benchmark.
-```
+
+```bash
 mvn clean install
 java -jar target/benchmarks.jar
 ```
 
 Perform 5 warmup iterations, 5 measurement iterations and fork 1 time for the benchmark.
-```
+
+```bash
 mvn clean install
 java -jar target/benchmarks.jar -wi 5 -i 5 -f 1
 ```
 
-# `jmh` command line options
+## `jmh` command line options
 
-```
+```bash
 $ java -jar target/benchmarks.jar -h
 
 Usage: java -jar ... [regexp*] [options]

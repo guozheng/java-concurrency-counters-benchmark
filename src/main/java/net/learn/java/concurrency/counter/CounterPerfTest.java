@@ -37,6 +37,8 @@ public class CounterPerfTest {
 
         VolatileCounter volatileCounter = new VolatileCounter();
 
+        SynchronizedCounter synchronizedCounter = new SynchronizedCounter();
+
         @Setup(Level.Trial)
         public void setup () {}
 
@@ -328,6 +330,32 @@ public class CounterPerfTest {
         } catch (InterruptedException e) {
         }
     }
+
+    @Benchmark
+    @BenchmarkMode(Mode.All)
+    @OutputTimeUnit(TimeUnit.SECONDS)
+    @Group("VolatileCounter")
+    @GroupThreads(READ_THREAD_COUNT)
+    public void testSynchronizedCounterWrite(CounterPerfState state) {
+        state.synchronizedCounter.increment();
+        try {
+            Thread.sleep(CounterPerfTest.WRITE_THREAD_TIME_MS);
+        } catch (InterruptedException e) {
+        }
+    }
+
+    @Benchmark
+    @BenchmarkMode(Mode.All)
+    @OutputTimeUnit(TimeUnit.SECONDS)
+    @Group("VolatileCounter")
+    @GroupThreads(READ_THREAD_COUNT)
+    public void testSynchronizedCounterRead(CounterPerfState state) {
+        state.synchronizedCounter.get();
+        try {
+            Thread.sleep(CounterPerfTest.READ_THREAD_TIME_MS);
+        } catch (InterruptedException e) {
+        }
+    }  
 
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()

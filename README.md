@@ -200,3 +200,4 @@ Usage: java -jar ... [regexp*] [options]
 1. Jakob Jenkov's great [beginner's intro to JMH](http://tutorials.jenkov.com/java-performance/jmh.html), all his series are very enjoyable and informative readings.
 1. java-performance.info posts: [Introduction to JMH](http://java-performance.info/jmh/) and [Introduction to JMH Profilers](http://java-performance.info/introduction-jmh-profilers/).
 1. Nitsan Wakart's posts: [JMH Resources](http://psy-lob-saw.blogspot.com/p/jmh-related-posts.html), [Writing Java Micro Benchmarks with JMH: Juice](http://psy-lob-saw.blogspot.fr/2013/04/writing-java-micro-benchmarks-with-jmh.html), [Using JMH to Benchmark Multi-Threaded Code](http://psy-lob-saw.blogspot.com/2013/05/using-jmh-to-benchmark-multi-threaded.html)
+1. Palomino Labs' blog post comparing [Java 8 LongAdder and AtomicLong performance](http://blog.palominolabs.com/2014/02/10/java-8-performance-improvements-longadder-vs-atomiclong/index.html)
